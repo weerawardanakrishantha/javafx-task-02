@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#062848" height="69.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Label alignment="CENTER" layoutX="173.0" layoutY="14.0" prefHeight="35.0" prefWidth="250.0" text="Dashboard" textFill="#f4ebeb">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblId" alignment="CENTER" layoutX="103.0" layoutY="124.0" prefHeight="26.0" prefWidth="114.0" text="Id" />
+      <Label fx:id="lblEmail" alignment="CENTER" layoutX="103.0" layoutY="186.0" prefHeight="26.0" prefWidth="114.0" text="Email" />
+      <Label fx:id="lblDob" alignment="CENTER" layoutX="331.0" layoutY="187.0" prefHeight="26.0" prefWidth="114.0" text="Date of Birth" />
+      <Label fx:id="lblName" alignment="CENTER" layoutX="331.0" layoutY="117.0" prefHeight="26.0" prefWidth="114.0" text="Name" />
+      <Label fx:id="lblGender" alignment="CENTER" layoutX="108.0" layoutY="260.0" prefHeight="26.0" prefWidth="114.0" text="Gender" />
+   </children>
+</AnchorPane>
