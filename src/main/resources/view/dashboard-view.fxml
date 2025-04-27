@@ -18,5 +18,6 @@
       <Label fx:id="lblDob" alignment="CENTER" layoutX="331.0" layoutY="187.0" prefHeight="26.0" prefWidth="114.0" text="Date of Birth" />
       <Label fx:id="lblName" alignment="CENTER" layoutX="331.0" layoutY="117.0" prefHeight="26.0" prefWidth="114.0" text="Name" />
       <Label fx:id="lblGender" alignment="CENTER" layoutX="108.0" layoutY="260.0" prefHeight="26.0" prefWidth="114.0" text="Gender" />
+      
    </children>
 </AnchorPane>

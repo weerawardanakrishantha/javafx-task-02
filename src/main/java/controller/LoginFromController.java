@@ -13,14 +13,17 @@ import javafx.stage.Stage;
 import model.Student;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class LoginFromController {
 
     @FXML
-    private TextField txtEmail;
+    public TextField txtEmail;
 
     @FXML
     private PasswordField txtPassword;
+
+    public static ArrayList<Student> studentArrayList;
 
     @FXML
     void btnLoginOnAction(ActionEvent event) throws IOException {
@@ -29,10 +32,12 @@ public class LoginFromController {
         Student student=findStudent(email);
 
             if (student.getPassword().equals(password)) {
-
+                studentArrayList=new ArrayList<>();
+                studentArrayList.add(student);
                 Stage stage = new Stage();
                 stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../view/dashboard-view.fxml"))));
                 stage.show();
+
 
 
             } else {
@@ -40,7 +45,7 @@ public class LoginFromController {
             }
 
     }
-    private Student findStudent(String email){
+    public Student findStudent(String email){
         for(Student student: DBConnection.getInstance().getConnection()){
             if(student.getEmail().equals(email)){
                 return student;
